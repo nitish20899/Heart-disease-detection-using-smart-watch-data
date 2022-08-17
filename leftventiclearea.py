@@ -78,6 +78,7 @@ def left_ventricle(img_data1, slicenumber, thresholds, seeds, closing_holes, dil
         return output_image
 
     for i in range(0, 24):
+        print(i)
         #         print('image: ',i)
         segment_left_ven_area(image_0[i], thresholds[i], seeds[0], closing_holes[0])
 
